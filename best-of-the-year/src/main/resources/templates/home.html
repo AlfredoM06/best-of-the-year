@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+<div>
+    <h1>
+        Best of the <span th:text="${year}"></span> by <span th:text="${name}"></span>
+    </h1>
+
+    <h2>
+        <a th:href="@{/song}"> Ecco la top 5 songs di quest'anno </a>
+    </h2>
+</div>
+
+</body>
+</html>

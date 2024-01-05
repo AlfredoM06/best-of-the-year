@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SongDetail</title>
+</head>
+<body>
+
+<div>
+    <h1>
+        Dettagli della Canzone
+    </h1>
+</div>
+<div>
+    <ul>
+        <li>Id: <span th:text="${id}"></span></li>
+        <li>Titolo: <span th:text="${song.title}">Title</span></li>
+        <li>Artista: <span th:text="${song.author}">Author</span></li>
+    </ul>
+</div>
+
+<div>
+    <h3>
+        <a th:href="@{/song}">torna alla lista</a>
+    </h3>
+</div>
+
+</body>
+</html>
