@@ -16,7 +16,7 @@ public class SongController {
     @GetMapping
     public String list(Model model) {
         model.addAttribute("songList", getSongs());
-        return "song/songs";
+        return "songs";
     }
 
     @GetMapping("/{id}")
@@ -25,7 +25,7 @@ public class SongController {
         Song song = getSongById(songId);
         model.addAttribute("songId", songId);
         model.addAttribute("song", song);
-        return "song/details";
+        return "details";
     }
 
 

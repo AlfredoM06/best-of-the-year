@@ -14,8 +14,8 @@
 
 <div>
     <ul>
-        <li th:each="current : ${songs}">
-            <a th:href="@{/songs/details/{id}(id=${song.id})}" th:text="${current.title}"></a>
+        <li th:each="current : ${songList}">
+            <a th:href="@{/song/{id}(id=${current.id})}" th:text="${current.title}"></a>
         </li>
     </ul>
     <a th:href="@{/}">Back to Home</a>
